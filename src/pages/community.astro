@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
+const communities = [
+  {
+    name: "WNB.rb",
+    website: "https://www.wnb-rb.dev/",
+    role: "Member & Speaker",
+  },
+  {
+    name: "Ruby for Good",
+    website: "https://rubyforgood.org/",
+    role: "Volunteer Software Developer",
+  },
+  {
+    name: "The Agency of Learning",
+    website: "https://agencyoflearning.com/",
+    role: "Software Developer",
+  },
+  {
+    name: "Women on Rails Newsletter",
+    website: "https://womenonrailsinternational.substack.com/",
+    role: "Translator",
+  },
+
+  {
+    name: "RubyConf",
+    website: "https://rubyconf.org/",
+    role: "2023 Edition Attendee",
+  },
+  {
+    name: "RailsConf",
+    website: "https://railsconf.org/",
+    role: "2024 Edition Attendee & Scholar",
+  },
+  {
+    name: "Ruby on Rails Link",
+    website: "https://www.rubyonrails.link/",
+    role: "Member",
+  },
+  {
+    name: "First Ruby Friend",
+    website: "https://firstrubyfriend.org/",
+    role: "Mentee",
+  },
+  {
+    name: "The Odin Project",
+    website: "https://www.theodinproject.com/",
+    role: "Graduate",
+  },
+];
+---
+
+<BaseLayout
+  title="Community Involvement | Jade Philippe"
+  description="Learn about Jade's involvement in Ruby and Rails communities"
+>
+  <div class="stack gap-20">
+    <main class="wrapper stack gap-8">
+      <Hero
+        title="Community"
+        tagline="I've been a part of the following Ruby and Rails communities ❤️"
+        align="start"
+      />
+      <Grid>
+        {
+          communities.map((community) => (
+            <li>
+              <a href={community.website}>{community.name}</a>: {community.role}
+            </li>
+          ))
+        }
+      </Grid>
+    </main>
+  </div>
+</BaseLayout>
