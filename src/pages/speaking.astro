@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
+const talks = [
+  {
+    event: "WNB.rb Meetup",
+    title: "Modern Authentication with WebAuthn",
+    url: "https://github.com/jp524/webauthn-demo/blob/main/WebAuthn%20Talk%20Slides.pdf",
+    date: "March 26, 2024"
+  },
+]
+---
+
+<BaseLayout
+  title="Speaking | Jade Philippe"
+  description="Learn about Jade's speaking engagements"
+>
+  <div class="stack gap-20">
+    <main class="wrapper stack gap-8">
+      <Hero
+        title="Speaking"
+        tagline="I started giving tech-related talks. More to come!"
+        align="start"
+      />
+      <Grid>
+        {
+          talks.map((talk) => (
+            <li>
+              {talk.date} - {talk.event} - <a href={talk.url}>{talk.title}</a>
+            </li>
+          ))
+        }
+      </Grid>
+    </main>
+  </div>
+</BaseLayout>
