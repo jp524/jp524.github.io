@@ -44,6 +44,7 @@ const { Content } = await entry.render();
       </header>
       <main class="wrapper">
         <div class="stack gap-10 content">
+          <a class="view-btn" href={entry.data.url}>View project</a>
           {
             entry.data.img && (
               <img src={entry.data.img} alt={entry.data.img_alt || ""} />
@@ -80,11 +81,30 @@ const { Content } = await entry.render();
   .tags {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .description {
     font-size: var(--text-lg);
     max-width: 54ch;
+  }
+
+  .view-btn {
+    font-size: var(--text-lg);
+    /* align-self: flex-start; */
+    display: flex;
+    place-content: center;
+    text-align: center;
+    padding: 0.56em 2em;
+    gap: 0.8em;
+    color: var(--accent-text-over);
+    text-decoration: none;
+    line-height: 1.1;
+    border-radius: 999rem;
+    overflow: hidden;
+    background: var(--gradient-accent-orange);
+    box-shadow: var(--shadow-md);
+    white-space: nowrap;
   }
 
   .content {
