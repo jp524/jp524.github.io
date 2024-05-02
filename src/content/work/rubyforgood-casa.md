@@ -23,6 +23,6 @@ The CASA project is a large Ruby on Rails codebase that has been developed since
 
 ### Selected Contributions
 
-- Reduced occurences of flaky tests in Docker environment from 30-50% down to less than 10%
+- Reduce occurences of flaky tests in Docker environment from 30-50% down to less than 10%
 - Allow supervisors and administrators to view their volunteer's learning jours
 - Update case contact form UI
