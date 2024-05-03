@@ -15,7 +15,7 @@ url: https://github.com/rubyforgood/human-essentials
 
 ### Overview
 
-I'm a contributor to Ruby for Good's Human Essentials project. It's is an inventory management system for banks supplying diaper, incontinence and period products (essential banks).
+I'm a contributor to Ruby for Good's Human Essentials project. It's an inventory management system for banks supplying diaper, incontinence and period products (essential banks).
 
 The [Human Essentials web application](https://humanessentials.app/) allows banks to manage their inventory, receive donations and issue distributions to community partner organizations. It supports the use of barcode readers to quickly scan items received and therefore facilitate day-to-day operations of essential banks.
 
@@ -26,5 +26,5 @@ The Human Essentials project is a large Ruby on Rails codebase that has been dev
 
 ### Selected Contributions
 
-- Update application logic to remove 'organization_name' from URLS
+- Update application logic to remove 'organization_name' from URLs
 - Update partner invitation process
