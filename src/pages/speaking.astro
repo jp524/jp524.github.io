@@ -7,7 +7,13 @@ const talks = [
     event: "WNB.rb Meetup",
     title: "Modern Authentication with WebAuthn",
     url: "https://github.com/jp524/webauthn-demo/blob/main/WebAuthn%20Talk%20Slides.pdf",
-    date: "March 26, 2024"
+    date: "March 2024"
+  },
+  {
+    event: "RailsConf 2024 Lightning Talks",
+    title: "A two-year journey in the Ruby and Rails community",
+    url: "../assets/speaking/railsconf2024.jpg",
+    date: "May 2024"
   },
 ]
 ---
@@ -27,7 +33,9 @@ const talks = [
         {
           talks.map((talk) => (
             <li>
-              {talk.date} - {talk.event} - <a href={talk.url}>{talk.title}</a>
+              <b>{talk.event}</b> |
+              {talk.date} |
+              <a href={talk.url} target="_blank">{talk.title} </a>
             </li>
           ))
         }
