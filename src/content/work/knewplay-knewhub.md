@@ -16,7 +16,7 @@ url: https://github.com/knewplay/knewhub
 
 ### Overview
 
-KnewHub is an open-source project I built for a former employer. Knewhub is a full-stack Ruby on Rails application allowing authors to share content from their GitHub repositories.
+Knewhub is a full-stack Ruby on Rails application allowing authors to share content from their GitHub repositories.
 
 Authors write articles using Markdown. They can also use custom syntax for KnewHub to display:
   - Code blocks from external code files or GitHub gists

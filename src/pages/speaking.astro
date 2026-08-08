@@ -33,9 +33,7 @@ const talks = [
         {
           talks.map((talk) => (
             <li>
-              <b>{talk.event}</b> |
-              {talk.date} |
-              <a href={talk.url} target="_blank">{talk.title} </a>
+              <b>{talk.event}</b> | {talk.date} | <a href={talk.url} target="_blank">{talk.title} </a>
             </li>
           ))
         }
